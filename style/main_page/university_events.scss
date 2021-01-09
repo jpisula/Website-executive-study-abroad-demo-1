@@ -1,0 +1,154 @@
+#university-events  {
+    padding-top: 110px;
+    padding-bottom: 110px;
+      
+    .center {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    }
+    
+    .wrapper {
+        display: flex;
+        overflow: hidden;
+        width: 100%;
+        padding: 100px 0px;
+        
+        & > .events-inner {
+            display: flex;
+            transition: all 1s ease-in-out;
+        }
+    }
+        
+    .set {
+        display: flex;
+        margin: 0;
+        width: 1140px;
+        justify-content: space-evenly;
+
+        .event-tile {
+            margin: 0;
+            width: 520px;  
+            box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.05);
+            border-radius: 15px;
+            padding: 30px;
+
+            p {
+                text-align: left;
+                font-size: 16px;
+            }  
+
+            .header-tile {
+                display: flex;
+
+
+                .date-square {
+                    display: inline-block;
+                    height: 76px;
+                    width: 76px;
+                    background-image: url("../../assets/main-page/university-events/date-bg.svg");
+                    background-repeat: no-repeat;
+                    background-position: 0% 0%;
+                    padding: 5px 20px;
+
+                    p {
+                        margin: 0;
+                        padding: 0;
+                        text-align: center;
+                    }
+
+                    .date-day {
+                        height: 35px;
+                        font-size: 27px;
+                        font-weight: 600;
+                        color: $violet-color;
+                    }
+
+                    .date-month {
+                        font-size: 18px;
+                        color: $violet-color;
+                    }
+                }
+
+                h2 {
+                    font-size: 24px;
+                    font-weight: 600;
+                    width: 80%;
+                    margin: auto 0;
+                    margin-left: 15px;
+                }
+            }
+
+            .bottom-tile {
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                align-items: center;
+
+                p {
+                    text-align: right;
+                    font-size: 16px;
+                }
+
+                button {
+                    border: 0;
+                    padding: 0;
+                    padding-top: 26px;
+                    font-size: 17px;
+                    font-weight: 600;
+                    color: $violet-color;
+
+                    img {
+                        vertical-align: middle;
+                        margin-left: 20px;
+                    }
+                }
+
+                button:hover {
+                    cursor: pointer;
+                    color: #000;
+
+                    img {
+                        content: url("../../assets/main-page/arrow-black.svg");
+                    }
+                }
+            }   
+        }  
+    }
+    
+    .events-dots {                
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 10%;
+        margin: 0 auto;
+
+        .dot {
+            height: 16px;
+            width: 16px;
+            background-color: #bbb;
+            border-radius: 50%;
+            border: 0;
+        }
+
+        .dot:hover {
+            background-color: $violet-color;
+            height: 18px;
+            width: 18px;
+            transition: all 300ms;
+            cursor: pointer;
+        }
+
+        .active-dot {
+            background-color: $violet-color;
+            height: 18px;
+            width: 18px;
+        }
+
+        .active-dot:hover {
+            cursor: default;
+        }
+    }
+}

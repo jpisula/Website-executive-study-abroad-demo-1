@@ -1,0 +1,111 @@
+nav {
+    position: fixed;
+    width: 100%;
+    padding-top: 50px;
+    transition: all 300ms;
+    z-index: 100;
+
+    .container {
+        display: flex;
+        
+        .logo {
+            margin-right: 12%;
+        }
+
+        img {
+            margin-right: 12%;
+        }
+
+        .nav-links {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+
+            a {
+                text-decoration: none;      
+                color: $dark-gray-color;
+                font-size: 17px;
+            }
+
+            a:hover {
+                padding: 10px 0;
+                background-image: url("../assets/main-page/nav/underline-violet.svg");
+                background-repeat: no-repeat;
+                background-position: 0 100%;
+                color: $violet-color;
+            }
+
+            .active {
+                padding: 10px 0;
+                background-image: url("../assets/main-page/nav/underline-violet.svg");
+                background-repeat: no-repeat;
+                background-position: 0 100%;
+            }
+
+            .active:hover {
+                color: $dark-gray-color;
+                cursor: default;
+            }
+
+            button {
+                color: $dark-gray-color;
+                font-size: 17px;
+            }
+
+            button:hover {
+                background-color: $violet-color;
+                color: #FFF;
+                transition: all 400ms;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.nav-scrolled {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: $violet-color;
+    transition: all 300ms;
+
+    .container {
+
+        img {
+            content: url("../../assets/logo-white.svg");
+        }
+
+        .nav-links {
+            a {
+                color: #FFF;
+            }
+
+            a:hover {
+                background-image: url("../assets/main-page/nav/underline-black.svg");
+                color: $dark-gray-color;
+            }
+
+            .active {
+                background-image: url("../assets/main-page/nav/underline-black.svg");
+            }
+
+            .active:hover {
+                color: #FFF;
+                cursor: default;
+            }
+
+            button {
+                color: $dark-gray-color;
+            }
+
+            button:hover {
+                border: 2px solid $dark-gray-color;
+                background-color: #8471ff;
+                color: #FFF;
+                transition: all 400ms;
+                cursor: pointer;
+            }
+        }
+    }
+}

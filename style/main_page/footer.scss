@@ -1,0 +1,58 @@
+footer {
+    background-color: $violet-color;
+    color: #FFF;
+    margin: 0;
+
+    p {
+        color: #FFF;
+        text-align: left;
+        font-size: 18px;
+    }
+
+    a { 
+        color: #FFF;
+        width: fit-content;
+    }
+
+    a:hover {
+        color: $dark-gray-color;
+    }
+
+    .author-info {
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 30px;
+
+        span {
+            color: $dark-gray-color;
+        }
+    }
+
+    .container {
+        .columns {
+            display: flex;
+            justify-content: space-between;
+
+            .col {
+                width: 33%;    
+            }
+
+            a {
+                font-size: 18px;
+                display: block;
+                text-decoration: none;
+                font-family: "Metropolis Medium";
+                text-align: left;
+                line-height: 300%;
+            }
+
+            p {
+                font-size: 18px;
+                text-align: left;
+                line-height: 200%;
+                width: 80%;
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,87 @@
+#landing-page {
+    padding-top: 20vh;
+    
+    .container {   
+        min-height: 65vh;
+        background-image: url("../../assets/main-page/landing-page/women_school_image.png"), url("../../assets/main-page/landing-page/fancy_shape.svg");
+        background-repeat: no-repeat;
+        background-position: 100% 100%, 100% 100%;
+
+        h1 {
+            padding-top: 6%;
+            font-family: "Metropolis Black";
+            font-size: 50px;
+            width: 40%;
+            font-weight: 300;
+            letter-spacing: 2px;
+            line-height: 130%;
+        }
+
+        p {
+            color: $light-gray-color;
+            font-size: 22px;
+            padding-top: 30px;
+            width: 50%;
+            line-height: 180%;
+            text-align: left;
+        }
+
+        button {
+            font-size: 22px;
+            background-color: $violet-color;
+            color: #FFF;
+            margin-top: 30px;
+            padding: 15px 32px;
+
+            img {
+                vertical-align: middle;
+                margin-left: 30px;
+            }
+        }
+
+        button:hover{
+            cursor: pointer;
+            color: #000;
+            background-color: #FFF;
+            transition: all 400ms;
+
+            img {
+                content: url("../../assets/main-page/arrow-black.svg")
+            }
+        }
+
+        .social-icons {
+            font-size: 26px;
+            margin-top: 3%;
+            margin-left: 1%;
+            width: 20%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .fa-facebook-f {
+                color: #3C5B9A;
+            }
+
+            .fa-facebook-f:hover {
+                color: $violet-color;
+            }
+
+            .fa-twitter {
+                color: #236CD9;
+            }
+
+            .fa-twitter:hover {
+                color: $violet-color;
+            }
+
+            .fa-instagram {
+                color: #FF5552;
+            }
+
+            .fa-instagram:hover {
+                color: $violet-color;
+            }
+        }
+    }
+}

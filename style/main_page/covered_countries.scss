@@ -1,0 +1,91 @@
+#covered-countries {
+    padding-top: 110px;
+    padding-bottom: 110px;
+    background-color: $lighter-gray-bg-color;
+
+    .container {
+            
+        .center {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            justify-content: center;
+        }
+            
+        .wrapper {
+            display: flex;
+            overflow: hidden;
+            width: 100%;
+            padding: 100px 0px;
+            
+            & > .countries-inner {
+                display: flex;
+                transition: all 1s ease-in-out;
+            }
+        }
+    }
+
+    .set {
+        display: flex;
+        margin: 0;
+        width: 1140px;
+        justify-content: space-evenly;
+
+        .country {
+            display: flex;
+            flex-direction: column;
+            width: 350px;
+
+            h2 {
+                padding-top: 25px;
+                padding-bottom: 10px;
+                font-size: 25px;
+                font-weight: 600;
+                color: $dark-gray-color;
+            }
+
+            p {
+                font-size: 16px;
+                text-align: left;
+                padding: 0;
+                width: 95%;
+                color: $light-gray-color;
+            }    
+        }
+    }
+
+    .countries-dots {                
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 10%;
+        margin: 0 auto;
+
+        .dot {
+            height: 16px;
+            width: 16px;
+            background-color: #bbb;
+            border-radius: 50%;
+            border: 0;
+        }
+
+        .dot:hover {
+            background-color: $violet-color;
+            height: 18px;
+            width: 18px;
+            transition: all 300ms;
+            cursor: pointer;
+        }
+
+        .active-dot {
+            background-color: $violet-color;
+            height: 18px;
+            width: 18px;
+        }
+
+        .active-dot:hover {
+            cursor: default;
+        }
+    }
+}

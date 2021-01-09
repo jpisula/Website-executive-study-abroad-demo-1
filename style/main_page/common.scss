@@ -1,0 +1,88 @@
+@font-face {
+    font-family: "Metropolis Medium";
+    src: url("../../assets/fonts/metropolis.medium.otf");
+}
+
+@font-face {
+    font-family: "Metropolis Black";
+    src: url("../../assets/fonts/metropolis.black.otf")
+}
+
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+$dark-gray-color: #373737;
+$violet-color: #717CFF;
+$light-gray-color: #7D7D7D;
+$lighter-gray-bg-color: #FAFAFA;
+
+body {
+    font-family: "Metropolis Medium";
+    color: $dark-gray-color;
+    // margin-top: 50px;
+    // transition: all 300ms;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.violet-special-text {
+    color: $violet-color;
+}
+
+.btn {
+    padding: 10px 32px;
+    background-color: #FFF;
+    border: 2px solid $violet-color;
+    border-radius: 10px;
+}
+
+.hide-class {
+    opacity: 0;
+    transition: all 800ms;
+}
+
+.show-class {
+    opacity: 1;
+    transition: all 800ms;
+}
+
+button:focus {
+    outline:none;
+}
+
+h1 {
+    text-align: center;
+    color: $dark-gray-color;
+    font-size: 37px;
+    font-family: "Metropolis Medium";
+    letter-spacing: 3px;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+
+p {
+    color: $light-gray-color;
+    font-size: 22px;
+    padding-top: 30px;
+    line-height: 180%;
+    text-align: center;
+}
+
+.col-3-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 45px;
+    margin-top: 110px;
+    margin-bottom: 50px;
+}
+
+.col-2-grid {
+    display: grid;
+    grid-template-columns: calc(33% - 26px) calc(33% - 26px);
+    grid-gap: 45px;
+    justify-content: center;
+}
